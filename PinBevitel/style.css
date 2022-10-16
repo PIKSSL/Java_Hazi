@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+
+.body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+   background-color: rgb(221, 221, 221);
+    margin: auto;
+    padding: 10px;
+    
+}
+
+.numbContainer{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    flex: 0 0 65%;
+    
+    grid-gap: 0px 10px;
+}
+
+.numb{
+    background-color: rgba(197, 197, 197, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    text-align: center;
+    font-size: 20px
+}
+.numb:hover{
+    cursor: pointer;
+}
+
+.btnContainer{
+   
+    flex: 0 0 35%;
+    
+}
+
+.btnReset{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(178, 178, 178);
+}
+
+.btnReset:hover{
+    cursor: pointer;
+}
+.numboff:hover{
+    cursor: not-allowed;
+}
+
+.fieldContainer{
+    margin-bottom: 130px;
+}
+
+.btnConsole{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(178, 178, 178);
+}
+
+.btnConsole:hover{
+    cursor: pointer;
+}
+
+.lastnumb:last-child:nth-child(3n - 2) {
+    grid-column-end: 3;
+  }
+
+.displayField{
+    background-color: white;
+    color: white;
+}
+
+
