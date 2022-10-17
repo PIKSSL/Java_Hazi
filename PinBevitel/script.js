@@ -43,6 +43,9 @@ function reset(){
     $('.displayField p').html('_');
     $('.displayField').css('color','white');
     placeNumbs(10);
+    if(checkbox){
+        $('.numb:last-child').addClass('lastnumb');
+    }
 }
 
 function placeNumbs(lenght){
